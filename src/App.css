@@ -1,38 +1,130 @@
-.App {
+/* .container {
+  max-width: 1080px;
+  margin: 20px auto;
+} */
+
+/* Container styling */
+.container {
+  max-width: 1080px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Search bar styling */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 80%;
+  max-width: 600px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-bar button:hover {
+  background-color: #1c86ee;
+}
+
+/* Current weather display styling */
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.current-weather .weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.current-weather .weather-details {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.current-weather .weather-details h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.current-weather .weather-details p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+/* Forecast list styling */
+.forecast-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.forecast-item {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.forecast-item .day {
+  font-size: 18px;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.forecast-item .temperature {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.forecast-item .weather-icon {
+  width: 60px;
+  height: 60px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .current-weather {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .current-weather .weather-details {
+    margin-left: 0;
+    margin-top: 20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 480px) {
+  .search-bar input {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .forecast-list {
+    grid-template-columns: 1fr;
   }
 }
