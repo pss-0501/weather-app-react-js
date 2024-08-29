@@ -43,11 +43,15 @@ function App() {
       <header className="app-header">
         <h1>Welcome to Weather App</h1>
         <h5>By Prathamesh Sawant</h5>
-      </header>
-
+        
       <button onClick={showPMAcceleratorInfo} className="info-button">
         Info
       </button>
+      </header>
+
+      {/* <button onClick={showPMAcceleratorInfo} className="info-button">
+        Info
+      </button> */}
 
       <Search onSearchChange={handleOnSearchChange}/>
       {/* <CurrentWeather/> */}
