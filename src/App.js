@@ -34,6 +34,12 @@ function App() {
 
   return (
     <div className="container">
+
+      {/* Header */}
+      <header className="app-header">
+        <h1>Welcome to Weather App</h1>
+      </header>
+
       <Search onSearchChange={handleOnSearchChange}/>
       {/* <CurrentWeather/> */}
       
