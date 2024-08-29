@@ -30,7 +30,11 @@ function App() {
         setForecast({ city: searchData.label, ...forcastResponse });
       })
       .catch(console.log);
-  }
+  };
+
+  const showPMAcceleratorInfo = () => {
+    alert(`PM Accelerator is dedicated to empowering product managers with AI-driven technologies to accelerate their product development processes. Visit our LinkedIn page for more information.`);
+  };
 
   return (
     <div className="container">
@@ -38,7 +42,12 @@ function App() {
       {/* Header */}
       <header className="app-header">
         <h1>Welcome to Weather App</h1>
+        <h5>By Prathamesh Sawant</h5>
       </header>
+
+      <button onClick={showPMAcceleratorInfo} className="info-button">
+        Info
+      </button>
 
       <Search onSearchChange={handleOnSearchChange}/>
       {/* <CurrentWeather/> */}

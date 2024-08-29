@@ -146,3 +146,19 @@
     grid-template-columns: 1fr;
   }
 }
+
+.info-button {
+  background-color: #007bff; /* Primary color */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Add padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Increase font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  margin-left: 10px; /* Add margin to separate from other elements */
+}
+
+.info-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
