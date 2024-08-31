@@ -6,6 +6,8 @@ import { WEATHER_API_KEY, WEATHER_API_URL } from './api';
 import { useState } from 'react';
 
 function App() {
+  // const cors = require('cors');
+  // App.use(cors());
 
   const [currentWeather, setCurrentWeather] = useState(null);
   const [forecast, setForecast] = useState(null);
